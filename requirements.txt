@@ -1,9 +1,9 @@
 torch
 torchvision
 torchaudio
-numpy
+numpy<2.0.0
 scipy
-sapien
+sapien==2.2.2   # Version that is believed to be used at time of publication
 gym
 tqdm
 open3d
