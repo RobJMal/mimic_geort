@@ -65,7 +65,7 @@ class HandKinematicModel:
         else:
             loader = scene.create_urdf_loader()
             self.hand = loader.load(hand_urdf)
-            init_position = [0, 0, 1.0]         # xyz, allegro [0.0, 0.0, 0.35]
+            init_position = [0, 0, 0.0]         # xyz, allegro [0.0, 0.0, 0.35]
             init_orientation = [1.0, 0, 0, 0]   # wxyz, allegro [0.695, 0, -0.718, 0]
             self.hand.set_root_pose(sapien.Pose(init_position, init_orientation))
 
