@@ -1,0 +1,58 @@
+{
+    "README!!": "Please see config/template.py for instructions. You can remove this in your config json",
+    
+    "name": "p50", 
+    "urdf_path": "./assets/p50/p50.urdf",
+
+    "base_link": "base_link",
+
+    "joint_order": [
+        "thumb_base2cmc", "thumb_cmc2mcp", "thumb_mcp2pp", "thumb_pp2dp_actuated",
+        "index_base2mcp", "index_mcp2pp", "index_pp2mp", "index_mp2dp",
+        "middle_base2mcp", "middle_mcp2pp", "middle_pp2mp", "middle_mp2dp",
+        "ring_base2mcp", "ring_mcp2pp", "ring_pp2mp", "ring_mp2dp",
+        "pinky_base2mcp", "pinky_mcp2pp", "pinky_pp2mp", "pinky_mp2dp"
+    ],
+
+    "fingertip_link": [
+        {
+            "name": "thumb",
+            "link": "thumb_fingertip",
+            "joint": ["thumb_base2cmc", "thumb_cmc2mcp", "thumb_mcp2pp", "thumb_pp2dp_actuated"],
+            "center_offset": [0.0, 0.0, -0.005],
+            "human_hand_id": 0
+        }, 
+
+        {
+            "name": "index",
+            "link": "index_fingertip",
+            "joint": ["index_base2mcp", "index_mcp2pp", "index_pp2mp", "index_mp2dp"],
+            "center_offset": [0.0, 0.0, -0.005],
+            "human_hand_id": 5
+        },
+
+        {
+            "name": "middle",
+            "link": "middle_fingertip",
+            "joint": ["middle_base2mcp", "middle_mcp2pp", "middle_pp2mp", "middle_mp2dp"],
+            "center_offset": [0.0, 0.0, -0.005],
+            "human_hand_id": 10
+        }, 
+        
+        {
+            "name": "ring",
+            "link": "ring_fingertip",
+            "joint": ["ring_base2mcp", "ring_mcp2pp", "ring_pp2mp", "ring_mp2dp"],
+            "center_offset": [0.0, 0.0, -0.005],
+            "human_hand_id": 15
+        }, 
+
+        {
+            "name": "pinky",
+            "link": "pinky_fingertip",
+            "joint": ["pinky_base2mcp", "pinky_mcp2pp", "pinky_pp2mp", "pinky_mp2dp"],
+            "center_offset": [0.0, 0.0, -0.005],
+            "human_hand_id": 20
+        }
+    ]
+}
