@@ -2,3 +2,6 @@
 geort.egg-info
 __pycache__/
 imgui.ini
+mimic_geort_ros2_ws/build/
+mimic_geort_ros2_ws/install/
+mimic_geort_ros2_ws/log/
